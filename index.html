@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> CSE 110 Lab 2: HTML Basics</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="Learning HTML basics">
+    <meta name="author" content="Kenzo Ku">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/ico" href="/screenshots/favicon.ico">
+  </head>
+  <body>
+    <header>
+        <h1>CSE 110 Lab 2</h1>
+        <h5><strong>Topic: Learning HTML basics</strong></h3>
+        <h5><strong>Date: 12 April 2023</strong></h3>
+        <h2><strong>Sections:</strong></h2>
+        <nav>
+            <ol>
+                <li><a href="#attendance_list"><b>Attendance List</b></a></li>
+                <li><a href="#agenda"><b>Meeting Agenda</b></a></li>
+                <li><a href="#goals"><b>Goals</b></a></li>
+                <li><a href="#future_plans"><b>Future Plans</b></a></li>
+                <li><a href="#comment"><b>Comments</b></a></li>
+            </ol>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <section>
+            <div class="attendance_div">
+                <h3 id="attendance_list">Attendance List:</h3>
+                <input type="checkbox"><span>Kenzo</span>
+                <br>
+                <input type="checkbox"><span>Kenji</span>
+            </div>
+        </section>
+        <hr>
+        <div class="agenda_div">
+            <h3 id="agenda">Meeting Agenda:</h3>
+            <ul>
+                <li><p>Document <i>metadata</i></p></li>
+                <li><p>Content Sectioning</p></li>
+                <li><p>Text content</p></li>
+                <li><p>Inline text <em>semantics</em></p></li>
+                <li><p>Images and multimedia</p></li>
+                <li><p>Interactive Elements</p></li>
+                <li><p>Forms</p></li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <h3 id="goals">Goals: Things to discuss from previous meetings</h3>
+            <ul>
+                <li>Inserting image</li>
+                <li>Inserting video</li>
+                <li>Inserting audio</li>
+               
+            </ul>
+        </div>
+        <hr>
+
+
+
+        <div>
+            <h3>Image of the header of this html website</h3>
+            <img src="screenshots/bodyss.png" alt="code screenshot">
+
+        </div>
+        <hr>
+
+        <div>
+            <h3>Video of the entire code</h3>
+            <video controls><source src="screenshots/video.mp4"></video>
+            <h4>Audio of the video</h4>
+            <audio controls><source src="screenshots/audio.m4a"></audio>
+        </div>    
+        <hr>
+
+        <div>
+            <h3 id="future_plans">Future plans for next meeting:</h3>
+            <ul>
+                <li>Learn CSS</li>
+                <li>Learn JavaScript</li>
+            </ul>
+
+        </div>
+        <hr>
+        <div>
+            <h3>Facts about Kenzo</h3>
+            <details>
+                <summary>Major</summary>
+                <p>Bachelor of Science, Computer Science</p>
+            </details>
+            <details>
+                <summary>School</summary>
+                <p>University of California, San Diego</p>
+            </details>
+        </div>
+        <br>
+        <div id="comment">
+            <fieldset>
+            <h3>Comments and questions section</h3>
+            <form>
+                <label for="question">Type question here:</label>
+                <input type="text" id="question" name="question">
+                <br>
+                <button type="button" onclick="alert('submitted question!')">Submit question</button>
+                <br>
+                <label for="comments">Type comments here:</label>
+                <input type="text" id="comments" name="comments">
+                <br>
+                <button type="button" onclick="alert('submitted comment!')">Submit comment</button>
+                <br>
+                <label for="dateToday">Input date here:</label>
+                <input type="date" id="dateToday" name="dateToday">
+                <br>
+                <br>
+                <p>Select your favorite language</p>
+                <input type="radio" id="html" name="fav" value="Java">
+                <label for="Java">Java</label><br>
+                <input type="radio" id="css" name="fav" value="Python">
+                <label for="Python">CSS</label><br>
+                <br>
+                <textarea id="additional_comment" name="additional_comment" rows="4" cols="50">Write additional comment here</textarea>
+                <br>
+                <label for="country">Select country:</label>
+                <input list="country_choices" id="country_choice" name="country_choice">
+                <datalist id="country_choices">
+                    <option value="USA"></option>
+                    <option value="UK"></option>
+                    <option value="Indonesia"></option>
+                    <option value="Korea"></option>
+                    <option value="Japan"></option>
+                </datalist>
+                <br>
+                <label for="school">Select school:</label>
+                <select name="school" id="school">
+                    <option value="UCSD">UCSD</option>
+                    <option value="UCLA">UCLA</option>
+                </select>
+            </form>
+            </fieldset>>
+
+
+
+
+
+        </div>
+
+          
+
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <h3>End of meeting note</h3>
+    </footer>
+  </body>
+</html>
