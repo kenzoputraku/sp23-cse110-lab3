@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-https://kenzoputraku.github.io/Lab2_Starter_CSE110/
+# Lab 3 - Starter
+ https://kenzoputraku.github.io/sp23-cse110-lab3/
