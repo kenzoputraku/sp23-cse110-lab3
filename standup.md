@@ -1,7 +1,9 @@
-What did I work on yesterday?
+# Standup template
+
+1. What did I work on yesterday?
 
 
-What am I working on today?
+2. What am I working on today?
 
 
-What issues are blocking me?
+3. What issues are blocking me?
