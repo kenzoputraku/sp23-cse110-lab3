@@ -10,6 +10,18 @@
 }
 
 
+header > h5{
+    font-size: 5mm;
+}
+
+* {
+    color:rgb(94, 51, 3)
+}
+
+[title="img"] {
+    border: 5px solid yellow;
+  }
+
 /*Edit for section colors*/
 h3{
     color: hsl(327, 42%, 43%);
@@ -93,6 +105,7 @@ h3{
    
 }
 
+
 /*Future plans div*/
 #future_plans_div{
     display: inline-block;
@@ -132,5 +145,24 @@ h3{
 #agenda-list{
     display:  flex; 
     flex-direction: column;
+}
+
+/*Selector list*/
+video,audio {
+    border: 5px solid yellow;
+}
+/*Changing adjacent h3*/
+h3 + h3{
+    font-size: 1cm;
+}
+
+/*changing general p*/
+br ~ p {
+    color: rgb(0, 216, 29);
+}
+
+
+img.center{
+    border-radius: 25px;
 }
 
