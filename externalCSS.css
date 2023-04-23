@@ -9,6 +9,7 @@
     }
 }
 
+
 header > h5{
     font-size: 5mm;
 }
@@ -20,6 +21,7 @@ header > h5{
 [title="img"] {
     border: 5px solid yellow;
   }
+
 /*Edit for section colors*/
 h3{
     color: hsl(327, 42%, 43%);
@@ -104,7 +106,6 @@ h3{
 }
 
 
-
 /*Future plans div*/
 #future_plans_div{
     display: inline-block;
@@ -145,6 +146,7 @@ h3{
     display:  flex; 
     flex-direction: column;
 }
+
 /*Selector list*/
 video,audio {
     border: 5px solid yellow;
@@ -163,3 +165,4 @@ br ~ p {
 img.center{
     border-radius: 25px;
 }
+
