@@ -1,56 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+        body {
+            background-image:linear-gradient(rgb(99, 183, 223), rgb(19, 96, 160))
+        }
+    </style>
     <title> CSE 110 Lab 2: HTML Basics</title>
-    <meta name="keywords" content="">
+    <!--<meta name="keywords" content="">
     <meta name="description" content="Learning HTML basics">
     <meta name="author" content="Kenzo Ku">
-    <meta http-equiv="refresh" content="30">
+    <meta http-equiv="refresh" content="30">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="screenshots/favicon.ico?">
+    <link rel="stylesheet" type="text/css" href="externalCSS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-        <h1>CSE 110 Lab 2</h1>
-        <h5><strong>Topic: Learning HTML basics</strong></h5>
-        <h5><strong>Date: 12 April 2023</strong></h5>
-        <h2><strong>Sections:</strong></h2>
-        <nav>
-            <ol>
-                <li><a href="#attendance_list"><b>Attendance List</b></a></li>
-                <li><a href="#agenda"><b>Meeting Agenda</b></a></li>
-                <li><a href="#goals"><b>Goals</b></a></li>
-                <li><a href="#future_plans"><b>Future Plans</b></a></li>
-                <li><a href="#comment"><b>Comments</b></a></li>
-            </ol>
-        </nav>
+        <h1 style="text-align: center;color: #ffffff;" id="title">CSE 110 Lab 2</h1>
+        <h5 style="text-align: center;color: rgb(255, 255, 255); margin-top: -40px" class="setPos"><strong>Topic: Learning HTML basics</strong></h5>
+        <h5 style="text-align: center;color: white; margin-top: -5mm; margin-bottom: 0.05cm" class="setPos"><strong>Date: 12 April 2023</strong></h5>
+        <h2 class="section-color" id="first-section"><strong>Sections:</strong></h2>
+        <div id="navigation-bar">
+            <nav>
+                <ol>
+                    
+                    <li><a href="#attendance_list"><b>Attendance List</b></a></li>
+                    <li><a href="#agenda"><b>Meeting Agenda</b></a></li>
+                    <li><a href="#goals"><b>Goals</b></a></li>
+                    <li><a href="#future_plans"><b>Future Plans</b></a></li>
+                    <li><a href="#comment"><b>Comments</b></a></li>
+
+                </ol>
+            </nav>
+        </div>
         <hr>
     </header>
     <main>
         <section>
             <div class="attendance_div">
-                <h3 id="attendance_list">Attendance List:</h3>
-                <input type="checkbox"><span>Kenzo</span>
-                <br>
-                <input type="checkbox"><span>Kenji</span>
+                <h3 id="attendance_list">Attendance List</h3>
+                <div>
+                    <input type="checkbox"><span>Kenzo</span>
+                    <br>
+                    <input type="checkbox"><span>Kenji</span>
+                </div>
             </div>
         </section>
         <hr>
         <div class="agenda_div">
-            <h3 id="agenda">Meeting Agenda:</h3>
-            <ul>
-                <li><p>Document <i>metadata</i></p></li>
-                <li><p>Content Sectioning</p></li>
-                <li><p>Text content</p></li>
-                <li><p>Inline text <em>semantics</em></p></li>
-                <li><p>Images and multimedia</p></li>
-                <li><p>Interactive Elements</p></li>
-                <li><p>Forms</p></li>
+            <h3 id="agenda">Meeting Agenda</h3>
+            <ul id="agenda-list">
+                <div class="grid-list">
+                    <li><p>Document <i>metadata</i></p></li>
+                    <li><p>Content Sectioning</p></li>
+                    <li><p>Text content</p></li>
+                    <li><p>Inline text <em>semantics</em></p></li>
+                    <li><p>Images and multimedia</p></li>
+                    <li><p>Interactive Elements</p></li>
+                    <li><p>Forms</p></li>
+                </div>
             </ul>
         </div>
         <hr>
-        <div>
+        <div id="goals">
             <h3 id="goals">Goals: Things to discuss from previous meetings</h3>
             <ul>
                 <li>Inserting image</li>
@@ -65,24 +82,27 @@
 
         <div>
             <h3>Image of the header of this html website</h3>
-            <img src="screenshots/bodyss.png" alt="code screenshot">
+            <img class="center" src="screenshots/bodyss.png" alt="code screenshot">
 
         </div>
         <hr>
 
         <div>
             <h3>Video of the entire code</h3>
-            <video controls><source src="screenshots/video.mp4"></video>
+            <video controls class="center" id="video"><source src="screenshots/video.mp4"></video>
             <h4>Audio of the video</h4>
             <audio controls><source src="screenshots/audio.m4a"></audio>
         </div>    
         <hr>
 
-        <div>
+        <div id="future_plans_div">
             <h3 id="future_plans">Future plans for next meeting:</h3>
             <ul>
+                <div class="flex-list">
                 <li>Learn CSS</li>
                 <li>Learn JavaScript</li>
+                <li>Create an 8 Ball</li>
+                </div>
             </ul>
 
         </div>
